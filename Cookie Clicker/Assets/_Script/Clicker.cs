@@ -23,6 +23,16 @@ public class Clicker : MonoBehaviour
         {
             this.transform.localScale = new Vector3(1f, 1f, 1f);
         }
+
+        if (Input.GetKeyDown("w"))
+        {
+            if(cookies >= 100 * manualClickUpgrade)
+            {
+                cookies -= 100 * manualClickUpgrade;
+                holder.text = cookies.ToString();
+                manualClickUpgrade++;
+            }
+        }
     }
 
 }
