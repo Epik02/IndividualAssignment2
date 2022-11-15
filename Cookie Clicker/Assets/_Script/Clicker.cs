@@ -16,11 +16,11 @@ public class Clicker : MonoBehaviour
         {
             cookies = cookies + 1;
             holder.text = cookies.ToString();
-            this.transform.localScale = new Vector3(0.8f, 0.8f, 0.8f);
+            this.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
         }
         else
         {
-            this.transform.localScale = new Vector3(1f, 1f, 1f);
+            this.transform.localScale = new Vector3(2.3f, 2.3f, 2.3f);
         }
     }
 
