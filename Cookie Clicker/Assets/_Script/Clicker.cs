@@ -7,6 +7,7 @@ using TMPro;
 public class Clicker : MonoBehaviour
 { 
     public int cookies = 0;
+    public int manualClickUpgrade = 1;
     public TMP_Text holder;
 
     // Update is called once per frame
@@ -14,7 +15,7 @@ public class Clicker : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            cookies = cookies + 1;
+            cookies = cookies + (1 * manualClickUpgrade);
             holder.text = cookies.ToString();
             this.transform.localScale = new Vector3(2.5f, 2.5f, 2.5f);
         }
